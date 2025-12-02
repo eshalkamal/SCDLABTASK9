@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: url('books.jpg') no-repeat center center;
+    background-size: cover;
+    box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+    color: whitesmoke;
+}
+
+.add-content {
+    margin-top: 20px;
+}
+
+input {
+    height: 30px;
+    width: 250px; /* Updated width */
+    color: black;
+    background-color: rgb(236, 232, 232);
+    border: 1px solid rgb(236, 232, 232);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px; /* Added padding to input */
+}
+
+button {
+    color: whitesmoke;
+    width: 80px;
+    height: 36px;
+    background-color: rgb(38, 164, 24);
+    border: 1px solid rgb(38, 164, 24);
+    border-radius: 10px;
+}
+
+button:hover {
+    color: whitesmoke;
+    border: 1px solid rgb(3, 72, 3);
+    background-color: rgb(3, 72, 3);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Custom bullet-style checkbox */
+li .bullet-checkbox {
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 50%; /* Makes it round */
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents from shrinking */
+}
+
+li .bullet-checkbox.checked {
+    background-color: black; /* Checked background color */
+    border-color: black; /* Checked border color */
+}
+
+li span {
+    flex: 1; /* Takes remaining space */
+    overflow: hidden; /* Prevents overflow text */
+    white-space: nowrap; /* Prevents wrapping */
+    text-overflow: ellipsis; /* Shows ellipsis for overflow text */
+}
+
+li button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: darkred;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
